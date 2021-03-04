@@ -1,0 +1,62 @@
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    /* background-color: wheat; */
+    background-image: url("./landing.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.dashButton{
+    color: #cf7500;
+    /* text-transform: uppercase; */
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    margin: 1rem;
+    height: 3rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-right: 0rem;
+
+}
+.dashButton:hover{
+    color: #e5f2fd;
+    background-color: #f0a500;
+    box-shadow: 0 0 10px #f5a61459, 0 0 40px #fda31b, 0 0 80px #f19225;
+    /* transition-delay: 0.3s; */
+    outline: none;
+    border: none;
+}
+.dash-p{
+    background-color: #f0a500;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    border-radius: 1rem;
+    opacity: 0.7;
+    font-weight: bold;
+}
+.dash-p1{
+    font-size: large;
+    color: black;
+}
+.buttons-dash{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}

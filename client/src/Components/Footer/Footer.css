@@ -1,0 +1,125 @@
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1a1c20;
+    /* margin-top: 185px; */
+    height: 359px;
+
+}
+.footer{
+    /* background-color: #1a1c20; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width:100%; */
+    /* margin-top: 100px; */
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    width: 66%;
+    margin-top: 19%;
+}
+.footer-image{
+    width: 26%;
+    margin-left: 41px;
+    animation: footerImageAnimation 3s infinite 0s linear;
+}
+
+@keyframes footerImageAnimation{
+    0%{
+        }
+    25%{
+        transform: rotate(90deg);
+        opacity: 0.7;
+        width: 20%;
+        box-shadow: 10px 10px gray;
+        }
+    50%{
+        transform: rotate(180deg);
+        opacity: 0.4;
+        width: 30%;
+        box-shadow: 2px 3px gray;
+        }
+    75%{
+        transform: rotate(0deg);
+        opacity: 1;
+        width: 26%;
+        }
+}
+.footer-h{
+    color: #F5B041;
+}
+.footer-ab{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    width: 50%;
+    margin-top: 4%;
+}
+.Footer-h4{
+    color: wheat;
+    text-align: center;
+}
+.footer-spn{
+    margin-bottom: 8%;
+    font-size: 90%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    width: 50%;
+    margin-top: 4%;
+}
+.footer-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.images-footer{
+    width: 15%;
+    margin-bottom: 6%;
+    cursor: pointer;
+    /* animation: footerIconsAnimation 3s infinite 0s linear; */
+} 
+.images-footer:hover{
+    width: 15%;
+    margin-bottom: 6%;
+    cursor: pointer;
+    animation: footerIconsAnimation 3s infinite 0s linear; 
+}
+@keyframes footerIconsAnimation{
+    0%{
+        }
+    25%{
+        transform: rotate(90deg);
+        opacity: 0.6;
+        width: 10%;
+        }
+    50%{
+        transform: rotate(180deg);
+        opacity: 0.4;
+        width: 8%;
+        }
+    75%{
+        transform: rotate(250deg);
+        opacity: 0.5;
+        width: 6%;
+        }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+        width: 15%;
+        }
+}
+   
+.copyright{
+text-align: center;
+color: blanchedalmond;
+}

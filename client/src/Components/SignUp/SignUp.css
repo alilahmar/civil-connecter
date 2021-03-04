@@ -1,0 +1,110 @@
+.signup{
+    background-image:url("./sigimage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 35rem; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    min-height: 100vh;
+    width: 100%;
+   
+}
+
+.signup-main{
+    /* width: 26%; */
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: burlywood;
+    /* margin:auto; */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+.signup-p{
+    color: #f0a500;
+    font-size: large;
+    font-weight: bold;
+}
+.signup-input{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+}
+.signup-inp{
+    /* position: absolute;
+    top:0;
+    left: 0; */
+    /* width: 80%; */
+    font-size: medium;
+    border-radius: 1.5rem 1.5rem 1.5rem 0;
+    outline: none;
+    padding: 0.6rem;
+    background: none;
+    z-index: 1;
+    color: blanchedalmond;
+}
+
+.signup-label{
+    /* position: absolute;
+    left: 1rem;
+    top: 1rem; */
+    padding: 0 .25rem;
+    color: blanchedalmond;
+    font-size: medium;
+    transition: .3s;
+}
+
+/* .signup-inp:focus + .signup-label{
+    top:-.5rem;
+    left:0.5rem;
+    color: blue;
+    font-size: medium;
+    font-weight: 500;
+    z-index: 10;
+}
+.signup-inp:not(:placeholder-shown) .signup-inp:not(:focus)+ .signup-label{
+    top:-.5rem;
+    left:0.8rem;
+    font-size: medium;
+    font-weight: 500;
+    z-index: 10;
+}
+.signup-inp:focus{
+    border: 1.5px solid red;
+} */
+.signup-butt{
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 200;
+    font-weight: 200;
+    color: blanchedalmond;
+}
+.signup-butt:hover{
+    color: #e5f2fd;
+    background-color: #f0a500;
+    box-shadow: 0 0 10px #f5a61459, 0 0 40px #fda31b, 0 0 80px #f19225;
+    /* transition-delay: 0.3s; */
+    outline: none;
+    border: none;
+}
+
+.signup-alr{
+    color: #f0a500;
+}
+.signup-spn{
+    color: black;
+}

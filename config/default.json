@@ -1,0 +1,7 @@
+{
+"mongoURI": "mongodb+srv://Ali:Aliazougagh1993@@alicluster.yd32q.mongodb.net/civil?retryWrites=true&w=majority",
+"jwtSecret":"mysecrettoken",
+"githubClientId":"13033061739e2361abed",
+"githubSecret":"c9db36dd50ae7199b003e1db413934e93ac7037e"
+}
+

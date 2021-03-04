@@ -1,0 +1,9 @@
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGOUT_USER = "LOGOUT_USER";
+export const CURRENT_USER = "CURRENT_USER";
+export const LOAD_USER = "LOAD_USER";
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
+export const DELETE_USER = "DELETE_USER";
+export const UPDATE_USER = "UPDATE_USER";
