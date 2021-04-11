@@ -3,6 +3,12 @@ import { useSelector } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import "./Landing.css";
 const Landing = () => {
+  const isAuth = useSelector((state) => state.userReducer.isAuth);
+
+  if (isAuth) {
+    return <Redirect to="/CivilDashboard" />;
+  }
+
   return (
     <div className="dashboard">
       <div className="dash-p">

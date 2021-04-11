@@ -25,7 +25,7 @@ export const profileReducer = (state = initialState, { type, payload }) => {
         ...state,
         loadProfile: false,
         // check payload.profiles
-        profiles: payload.profiles,
+        profiles: payload,
       };
 
     case GET_PROFILES_FAIL:

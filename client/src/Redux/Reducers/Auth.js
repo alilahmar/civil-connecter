@@ -10,7 +10,7 @@ import {
   UPDATE_USER,
 } from "../Const/Auth";
 const initialState = {
-  user: {},
+  user: JSON.parse(localStorage.getItem("user")) || {},
   users: [],
   loadUser: false,
   loadUsers: false,
@@ -23,6 +23,8 @@ export const userReducer = (state = initialState, action) => {
     case REGISTER_SUCCESS: {
       console.log("payload", payload);
       localStorage.setItem("token", payload.token);
+      localStorage.setItem("user", JSON.stringify(payload.user));
+
       return {
         ...state,
         user: payload.user,
@@ -33,6 +35,7 @@ export const userReducer = (state = initialState, action) => {
 
     case REGISTER_FAIL:
       localStorage.removeItem("token");
+      localStorage.removeItem("user");
       return {
         ...state,
         token: null,
@@ -43,6 +46,8 @@ export const userReducer = (state = initialState, action) => {
     case LOGIN_SUCCESS:
       console.log("testing login success");
       localStorage.setItem("token", payload.token);
+      localStorage.setItem("user", JSON.stringify(payload.user));
+
       return {
         ...state,
         user: payload.user,
@@ -52,6 +57,7 @@ export const userReducer = (state = initialState, action) => {
 
     case LOGOUT_USER:
       localStorage.removeItem("token");
+      localStorage.removeItem("user");
       return { user: null, loadUser: false, errors: null, isAuth: false };
     default:
       return state;

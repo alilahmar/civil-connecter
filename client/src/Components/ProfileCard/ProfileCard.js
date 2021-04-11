@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProfileCard.css";
 
-const ProfileCard = () => {
+const ProfileCard = ({ profile }) => {
   return (
     <div className="containerC">
       <div className="card">
@@ -9,10 +9,10 @@ const ProfileCard = () => {
           <img src="./flower.jpg" alt="imageUser" />
         </div>
         <div className="contentC">
-          <h2>company</h2>
-          <p>website</p>
-          <p>Location</p>
-          <p>Status</p>
+          <h2>company {profile.company}</h2>
+          <p>website{profile.website}</p>
+          <p>Location{profile.location}</p>
+          <p>Status{profile.status}</p>
         </div>
       </div>
     </div>

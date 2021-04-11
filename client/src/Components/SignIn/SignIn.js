@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { Link, useHistory } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Redirect, useHistory } from "react-router-dom";
 import { loginUser } from "../../Redux/Actions/Auth";
 
 const SignIn = () => {
+  const isAuth = useSelector((state) => state.userReducer.isAuth);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const history = useHistory();
+
+  if (isAuth) {
+    return <Redirect to="/CivilDashboard" />;
+  }
 
   return (
     <div>

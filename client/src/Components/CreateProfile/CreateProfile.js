@@ -20,7 +20,6 @@ const CreateProfile = () => {
   console.log("reducerUser", userReducer);
   // dispatch action
   const dispatch = useDispatch();
-
   return (
     <div>
       <h3>Welcome {userReducer.user.name}</h3> <br />
@@ -36,7 +35,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="company"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="website" class="labelInp">
@@ -48,7 +47,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="website"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="location" class="labelInp">
@@ -71,7 +70,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="status"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="skills" class="labelInp">
@@ -83,7 +82,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="skills"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="bio" class="labelInp">
@@ -95,7 +94,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="bio"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="twitter" class="labelInp">
@@ -107,7 +106,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="twitter"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="facebook" class="labelInp">
@@ -119,7 +118,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="facebook"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="linkedIn" class="labelInp">
@@ -131,7 +130,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="linkedIn"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="youtube" class="labelInp">
@@ -143,7 +142,7 @@ const CreateProfile = () => {
         }}
         type="text"
         name="youtube"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <br />
       <label for="instagram" class="labelInp">
@@ -155,25 +154,27 @@ const CreateProfile = () => {
         }}
         type="text"
         name="instagram"
-        autocomplete="off"
+        // autocomplete="off"
       />
       <div>
         <button
-          onClick={dispatch(
-            addProfile({
-              company,
-              website,
-              location,
-              status,
-              skills,
-              bio,
-              twitter,
-              facebook,
-              linkedIn,
-              youtube,
-              instagram,
-            })
-          )}
+          onClick={() =>
+            dispatch(
+              addProfile({
+                company,
+                website,
+                location,
+                status,
+                skills,
+                bio,
+                twitter,
+                facebook,
+                linkedIn,
+                youtube,
+                instagram,
+              })
+            )
+          }
         >
           Save
         </button>

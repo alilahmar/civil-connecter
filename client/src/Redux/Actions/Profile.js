@@ -30,13 +30,17 @@ export const addProfile = (profile, history) => async (dispatch) => {
         authorization: localStorage.getItem("token"),
       },
     });
-
     dispatch({
       type: REGISTER_PROFILE,
       payload: result.data,
     });
+    console.log("profiles", result);
     history.push(`CivilDashboard`);
   } catch (error) {
-    dispatch({ type: ADD_PROFILE_FAIL, payload: error });
+    dispatch({
+      type: ADD_PROFILE_FAIL,
+      payload: error,
+    });
+    console.log(error);
   }
 };

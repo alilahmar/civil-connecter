@@ -26,7 +26,7 @@ function App() {
           <PrivateRoute path="/CreateProfile" component={CreateProfile} />
           <PrivateRoute path="/CivilConnecters" component={CivilConnecters} />
           <Route path="/AboutUs" component={AboutUs} />
-          {/* <Route component={NotFound} /> */}
+          <Route default component={NotFound} />
         </Switch>
         {/* <ProfileCard /> */}
       </section>

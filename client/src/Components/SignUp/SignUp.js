@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Redirect } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import "./SignUp.css";
 
@@ -8,12 +8,19 @@ import "./SignUp.css";
 import { register } from "../../Redux/Actions/Auth";
 
 const SignUp = () => {
+  const isAuth = useSelector((state) => state.userReducer.isAuth);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
   const dispatch = useDispatch();
   const history = useHistory();
+
+  if (isAuth) {
+    return <Redirect to="/CreateProfile" />;
+  }
+
   return (
     <div className="signup">
       <div className="signup-main">
